@@ -11,5 +11,5 @@ FROM alpine:latest
 WORKDIR /app
 COPY --from=builder /app/athom-exporter /app/athom-exporter
 
-EXPOSE 8080
-ENTRYPOINT ["/app/ical-proxy"]
+EXPOSE 5573
+ENTRYPOINT ["/app/athom-exporter"]
