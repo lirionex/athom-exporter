@@ -104,7 +104,7 @@ docker run -d \
 
 ```yaml
 services:
-    ical-proxy:
+    athom-exporter:
         image: ghcr.io/lirionex/athom-exporter/athom-exporter:latest
         container_name: athom-exporter
         ports:

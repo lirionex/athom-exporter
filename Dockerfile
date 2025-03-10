@@ -4,7 +4,7 @@ WORKDIR /app
 COPY . .
 
 RUN go mod download
-RUN CGO_ENABLED=0 go build -o ./ical-proxy
+RUN CGO_ENABLED=0 go build -o ./athom-exporter
 
 FROM alpine:latest
 
